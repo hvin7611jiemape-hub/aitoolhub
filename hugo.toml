@@ -1,0 +1,44 @@
+baseURL = "https://aitoolhub.github.io/"
+languageCode = "zh-cn"
+title = "AI工具工坊 | 自动化提效实用指南"
+theme = "PaperMod"
+copyright = "© 2026 Aitoolhub. All rights reserved."
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  SiteTitle = "AI工具工坊"
+  description = "专注于AI工具测评、自动化开发与效率提升的实用指南站"
+  keywords = ["AI工具", "自动化", "效率工具", "ChatGPT", "GPT", "工作流自动化", "AI开发"]
+  author = "Aitoolhub"
+  images = ["/og-image.png"]
+
+  # PaperMod params
+  homeInfoParams = { Title = "欢迎来到 AI工具工坊", Content = "在这里找到AI工具测评、自动化开发教程与效率提升实战指南。" }
+  socialIcons = [{ name = "github", url = "https://github.com/hvin7611jiemape-hub/aitoolhub" }]
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 4
+
+[build]
+  writeStats = true
